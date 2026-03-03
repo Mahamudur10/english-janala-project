@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
-.hind-siliguri {
+*{
+    font-family: "Poppins", sans-serif;
+}
+.font-bangla {
   font-family: "Hind Siliguri", sans-serif;
 }
