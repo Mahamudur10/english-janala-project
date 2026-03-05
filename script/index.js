@@ -1,3 +1,4 @@
+
 const loadLessons = () => {
     fetch("https://openapi.programming-hero.com/api/levels/all")
         .then((res) => res.json())
@@ -40,7 +41,7 @@ const displayLevelWord = (words) => {
         const card = document.createElement("div");
         card.innerHTML = `
         <div class="bg-white rounded-xl shadow-sm text-center py-10 px-5 space-y-4">
-            <h2 class="font-bold text-2xl">${word.word ? word : "শব্দ পাওয়া যায়নি"}</h2>
+            <h2 class="font-bold text-2xl">${word.word ? word.word : "শব্দ পাওয়া যায়নি"}</h2>
             <p class="font-semibold">Meaning /Pronounciation</p>
             <div class="text-2xl font-medium font-bangla">"${word.meaning ? word.meaning : "অর্থ পাওয়া যায়নি"} / 
             ${word.pronunciation ? word.pronunciation : "pronunciation পাওয়া যায়নি"}"</div>
